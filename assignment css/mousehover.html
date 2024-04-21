@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Hover</title>
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .image-container {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+  }
+  .image-container:hover {
+    transform: rotate(15deg) scale(1.2);
+  }
+  .image-container:hover img {
+    transition: transform 0.3s ease;
+  }
+  .abc{
+    width: 200px;
+  height: 200px;
+  }
+  .xyz{
+    width: 200px;
+  height: 200px;
+  display: flex;
+    flex-direction: row;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+  <div class="col-md-4">
+  <div class="image-container">
+    <img src="C:\Users\DELL\Pictures\download.jpeg" alt="Image 1" class="abc">
+  </div>
+  <div class="image-container">
+    <img src="C:\Users\DELL\Pictures\istockphoto-488182109-612x612.jpg" alt="Image 2" class="abc">
+  </div>
+  <div class="image-container">
+    <img src="C:\Users\DELL\Pictures\download (1).jpeg" alt="Image 3" class="abc">
+</div>
+<div class="image-container">
+  <div class="col-md-4">
+  <div class="row">
+  <div class="image-container">
+    <img src="C:\Users\DELL\Pictures\634e9e257f0b0236660ea900-chocolate-gift-basket-food-gifts.jpg" alt="Image 4" class="xyz">
+  </div>
+  <div class="image-container">
+    <img src="C:\Users\DELL\Pictures\cake3.jpg" alt="Image 5" class="xyz">
+  </div>
+  <div class="image-container">
+    <img src="C:\Users\DELL\Pictures\cake5.jpeg" alt="Image 6" class="xyz">
+  
+  </div>
+</div>
+</body>
+</html>

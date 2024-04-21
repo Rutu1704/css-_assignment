@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marquee Tag</title>
+<style>
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+  }
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  .marquee span:nth-child(1) {
+    color:#f22d13;
+  }
+  .marquee span:nth-child(2) {
+    color:#fc990d;
+  }
+</style>
+</head>
+<body>
+
+<div class="marquee">
+  <h3><span>Hey I am Amruta</span></h3>
+  <span><h4>Hello</h4></span>
+</div>
+
+</body>
+</html>
